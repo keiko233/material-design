@@ -14,9 +14,11 @@ export interface ButtonProps
   extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
     ButtonVariantsProps {
   asChild?: boolean;
+  loading?: boolean;
 }
 
 export const Button = ({
+  loading,
   asChild,
   variant,
   disabled,
